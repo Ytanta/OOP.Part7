@@ -16,6 +16,7 @@ public class Student implements Observer{
                     name, nameCompany, vacancy.getMaxSalary());
             this.salary = vacancy.getMaxSalary();
 
+
         }
         else {
             System.out.printf("Студент %s: Я найду работу получше! (компания: %s; заработная плата: %d)\n",

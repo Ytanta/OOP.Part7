@@ -25,13 +25,13 @@ public class Program {
         jobAgency.registerObserver(master1);
         jobAgency.registerObserver(master2);
         jobAgency.registerObserver(middle1);
-        Vacancy vac1 = new Vacancy(120000, "Middle");
-        Vacancy vac2 = new Vacancy(95000, "Мастер");
-        Vacancy vac3 = new Vacancy(98000, "Студент");
+        Vacancy vac1 = new Vacancy(120000, "Middle", google);
+        Vacancy vac2 = new Vacancy(95000, "Мастер", yandex);
+        Vacancy vac3 = new Vacancy(98000, "Студент", geekBrains);
         for (int i = 0; i < 3; i++){
-            google.needEmployee(vac1);
-            yandex.needEmployee(vac2);
-            geekBrains.needEmployee(vac3);
+            vac1.needEmployee(vac1,google);
+            vac2.needEmployee(vac2,yandex);
+            vac3.needEmployee(vac3,geekBrains);
         }
     }
 
