@@ -2,7 +2,7 @@ package geekbrains.lesson7.src.main.java.ru.geekbrains.lesson7.observer;
 
 import java.util.Random;
 
-public class Company implements Vacanc {
+public class Company  {
 
     private Random random = new Random();
 
@@ -29,10 +29,5 @@ public class Company implements Vacanc {
        jobAgency.sendOffer(name, vacancy);
     }
 
-    @Override
-    public void tableVacancy(String name, Publisher jobAgency, int maxSalary, String vacancy) {
-
-
-
-    }
+ 
 }
