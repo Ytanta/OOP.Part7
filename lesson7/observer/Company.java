@@ -14,6 +14,10 @@ public class Company  {
 
     private Publisher jobAgency;
 
+    public Publisher getJobAgency() {
+        return jobAgency;
+    }
+
     private int maxSalary;
 
     private String vacancy;
@@ -21,13 +25,7 @@ public class Company  {
     public Company(String name, Publisher jobAgency ) {
         this.name = name;
         this.jobAgency = jobAgency;
-//        this.maxSalary = maxSalary;
-//        this.vacancy = vacancy;
     }
 
-    public void needEmployee(Vacancy vacancy){
-       jobAgency.sendOffer(name, vacancy);
-    }
 
- 
 }
